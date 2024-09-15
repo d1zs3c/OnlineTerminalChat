@@ -11,4 +11,4 @@ Steps:
 4. Copy the ip-addres and port provided by ngrok.
 5. Execute launch_client.py with the two parametres (ip, port).
 6. Login with the password, type a username.
-7. Have fun x2:)
+7. Have fun x2 :)
