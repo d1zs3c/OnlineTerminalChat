@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+# ============================================================
+# Script Name : server.py
+# Author      : d1zs3c
+# Date        : 2024-08-17
+# Version     : 2.1
+# Description : Read the README.md.
+# ============================================================
 import socket
 import threading
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
