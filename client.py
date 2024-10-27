@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # ============================================================
-# Script Name : nombre_del_script.py
+# Script Name : client.py
 # Author      : d1zs3c
 # Date        : 2024-08-17
 # Version     : 2.1
