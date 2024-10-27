@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+# ============================================================
+# Script Name : nombre_del_script.py
+# Author      : d1zs3c
+# Date        : 2024-08-17
+# Version     : 2.1
+# Description : Read the README.md.
+# ============================================================
+
 import socket
 import threading
 import tkinter as tk
