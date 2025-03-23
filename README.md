@@ -2,13 +2,12 @@
 
 Using these scripts, you can communicate with anyone in the world via a terminal in an encrypted way. Set an initial password and a 32-bit key to encrypt the messages.
 🚀 Steps
-
     Download the required libraries:
+    
+    pip install cryptography tk
 
-pip install cryptography tk
-
-    Choose a password and a 32-bit key
-    Edit the following scripts and set your values:
+Choose a password and a 32-bit key
+Edit the following scripts and set your values:
 
     launch_serverchat.sh
 
@@ -16,34 +15,24 @@ pip install cryptography tk
 
     launch_bot.sh
 
-    Configure ngrok (it's free):
+Configure ngrok (it's free), add your auth token:
 
-        Create an account at ngrok.com
+    ngrok config add-authtoken YOUR_TOKEN_HERE
 
-        Add your auth token:
+Run the server:
 
-ngrok config add-authtoken YOUR_TOKEN_HERE
+    ./launch_serverchat.sh
 
-    Run the server:
+Copy the IP and port provided by ngrok, for example:
 
-./launch_serverchat.sh
+    2.tcp.eu.ngrok.io 10982
 
-    Copy the IP and port provided by ngrok, for example:
+Run the client in another terminal:
 
-2.tcp.eu.ngrok.io 10982
+    ./launch_client.sh 2.tcp.eu.ngrok.io 10982
 
-    Run the client in another terminal:
+(Optional) Keep the connection alive with the bot:
 
-./launch_client.sh 2.tcp.eu.ngrok.io 10982
+    ./launch_bot.sh 2.tcp.eu.ngrok.io 10982
 
-    (Optional) Keep the connection alive with the bot:
-
-./launch_bot.sh 2.tcp.eu.ngrok.io 10982
-
-    Login & Chat
-
-        Enter your password
-
-        Choose a username
-
-        Start chatting securely!
+Login and have fun!!
