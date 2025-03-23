@@ -14,4 +14,8 @@ Steps:
 7. If you need keep alive the conection, launch the script launch_bot.sh.
 8. Login with the password, type a username.
 9. Have fun x2 :)
+
+
+
+
 ![image](https://github.com/user-attachments/assets/a477a0f2-e2ca-4ebc-adf3-d92ee017f936)
