@@ -1,6 +1,7 @@
 🖥️ OnlineTerminalChat
 
 Using these scripts, you can communicate with anyone in the world via a terminal in an encrypted way. Set an initial password and a 32-bit key to encrypt the messages.
+
 Yo need to execute firts the script "launch_serverchat.sh" and in another terminal the script "launch_client.sh" with two parameters (the ip and port provided to you by ngrok). If you need the server online without traffic, you need to execute the "launch_bot.sh" script; this script act like a client and send a message each 4 minutes.
 
 
