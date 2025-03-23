@@ -4,7 +4,8 @@ Using these scripts, you can communicate with anyone in the world via a terminal
 
 
 🚀 Steps
-    Download the required libraries:
+
+Download the required libraries:
     
     pip install cryptography tk
 
