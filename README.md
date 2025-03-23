@@ -6,8 +6,7 @@ Using these scripts, you can communicate with anyone in the world via a terminal
     
     pip install cryptography tk
 
-Choose a password and a 32-bit key
-Edit the following scripts and set your values:
+Choose a password and a 32-bit key, edit the following scripts and set your values:
 
     launch_serverchat.sh
 
@@ -15,7 +14,11 @@ Edit the following scripts and set your values:
 
     launch_bot.sh
 
-Configure ngrok (it's free), add your auth token:
+Create account and install ngrok (it's free):
+    
+    sudo apt install ngrok
+
+Add your auth token:
 
     ngrok config add-authtoken YOUR_TOKEN_HERE
 
