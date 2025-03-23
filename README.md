@@ -1,49 +1,49 @@
 🖥️ OnlineTerminalChat
 
-With these scripts, you can communicate securely with anyone in the world via the terminal using end-to-end encryption. Just set an initial password and a 32-bit key to encrypt messages.
-🚀 Getting Started
-1. Install Dependencies
+Using these scripts, you can communicate with anyone in the world via a terminal in an encrypted way. Set an initial password and a 32-bit key to encrypt the messages.
+🚀 Steps
 
-Make sure you have Python installed. Then, install the required libraries:
+    Download the required libraries:
 
 pip install cryptography tk
 
-2. Configure
+    Choose a password and a 32-bit key
+    Edit the following scripts and set your values:
 
-    Choose a password and a 32-bit key.
+    launch_serverchat.sh
 
-    Update these values in the three scripts: launch_serverchat.sh, launch_client.sh, and launch_bot.sh.
+    launch_client.sh
 
-3. Set Up Ngrok
+    launch_bot.sh
 
-    Create a free Ngrok account.
+    Configure ngrok (it's free):
 
-    Connect your authtoken:
+        Create an account at ngrok.com
+
+        Add your auth token:
 
 ngrok config add-authtoken YOUR_TOKEN_HERE
 
-4. Launch the Server
+    Run the server:
 
 ./launch_serverchat.sh
 
-This will start the chat server and open a tunnel with Ngrok.
-5. Copy the Ngrok Address
+    Copy the IP and port provided by ngrok, for example:
 
-Copy the IP address and port shown by Ngrok (something like 2.tcp.eu.ngrok.io 10982).
-6. Launch the Client
+2.tcp.eu.ngrok.io 10982
 
-In a new terminal:
+    Run the client in another terminal:
 
 ./launch_client.sh 2.tcp.eu.ngrok.io 10982
 
-7. (Optional) Keep the Server Alive
-
-If you want the server to stay online even without traffic, run the bot script:
+    (Optional) Keep the connection alive with the bot:
 
 ./launch_bot.sh 2.tcp.eu.ngrok.io 10982
 
-8. Login & Chat
+    Login & Chat
 
-    Enter your password and pick a username.
+        Enter your password
 
-    Start chatting securely from your terminal!
+        Choose a username
+
+        Start chatting securely!
