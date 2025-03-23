@@ -2,8 +2,8 @@
 # ============================================================
 # Script Name : client.py
 # Author      : d1zs3c
-# Date        : 2024-08-17
-# Version     : 2.1
+# Date        : 2025-03-23
+# Version     : 3.0
 # Description : Read the README.md.
 # ============================================================
 
@@ -14,8 +14,8 @@ from tkinter import simpledialog, scrolledtext, messagebox
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 import os
 
-HOST = '4.tcp.eu.ngrok.io'
-PORT = 14632
+HOST = '2.tcp.eu.ngrok.io'
+PORT = 10982
 KEY = b'11010110011100011001010101101100'
 
 class ClientGUI:
@@ -108,11 +108,6 @@ class ClientGUI:
                 encrypted_message = self.client_socket.recv(1024)
                 if encrypted_message:
                     message = self.decrypt_message(encrypted_message)
-                
-                # Ignorar mensajes "ping"
-                #    if message == "ping":
-                #        continue
-                
                     self.display_message(message)
                 else:
                     self.display_message("Connection closed.")
