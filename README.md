@@ -1,6 +1,8 @@
 🖥️ OnlineTerminalChat
 
 Using these scripts, you can communicate with anyone in the world via a terminal in an encrypted way. Set an initial password and a 32-bit key to encrypt the messages.
+
+
 🚀 Steps
     Download the required libraries:
     
