@@ -2,8 +2,8 @@
 # ============================================================
 # Script Name : server.py
 # Author      : d1zs3c
-# Date        : 2024-08-17
-# Version     : 2.1
+# Date        : 2025-03-23
+# Version     : 3.0
 # Description : Read the README.md.
 # ============================================================
 import socket
