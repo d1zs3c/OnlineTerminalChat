@@ -14,9 +14,9 @@ from tkinter import simpledialog, scrolledtext, messagebox
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 import os
 
-HOST = 'parameter1'
-PORT = 12345
-KEY = b'string32bits_thisisanexample'
+HOST = '4.tcp.eu.ngrok.io'
+PORT = 14632
+KEY = b'11010110011100011001010101101100'
 
 class ClientGUI:
     def __init__(self, master, client_socket):
@@ -110,8 +110,8 @@ class ClientGUI:
                     message = self.decrypt_message(encrypted_message)
                 
                 # Ignorar mensajes "ping"
-                    if message == "ping":
-                        continue
+                #    if message == "ping":
+                #        continue
                 
                     self.display_message(message)
                 else:
