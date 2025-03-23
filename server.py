@@ -10,26 +10,17 @@ import socket
 import threading
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 import os
-import time
+#import time
 
 HOST = '0.0.0.0'
 PORT = 12345
 MAX_CLIENTS = 5
-KEY = b'string32bits_thisisanexample'
-PASSWORD = "yourpassword"
+KEY = b'11010110011100011001010101101100'
+PASSWORD = "password"
 
 clients = []
 usernames = []
-'''
-def ping_clients():
-    while True:
-        time.sleep(30)  # Cada 30 segundos
-        for client in clients:
-            try:
-                client.send(encrypt_message("ping"))
-            except:
-                remove_client(client)
-'''
+
 def encrypt_message(message):
     aesgcm = AESGCM(KEY)
     nonce = os.urandom(12)
@@ -107,7 +98,6 @@ def receive_connections():
 
 if __name__ == "__main__":
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    #server.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
     server.bind((HOST, PORT))
-    #threading.Thread(target=ping_clients, daemon=True).start()
+
     receive_connections()
